@@ -5,14 +5,16 @@ import Channels from "./Channels/Channels";
 import PrivateChat from "./privateChat/PrivateChat";
 import FavouriteChannel from "./Favourites/FavouriteChannel";
 import "./sidebar.css";
+import SidebarContent from "./SidebarContent";
 
 export const Sidebar = () => {
   return (
-    <Menu vertical fixed="left" borderless size="large" className="side_bar">
-      <UserInfo />
-      <FavouriteChannel />
-      <Channels />
-      <PrivateChat />
-    </Menu>
+    <div className="desktop_sidebar">
+      <Menu vertical fixed="left" borderless size="large" className="side_bar">
+        <SidebarContent />
+      </Menu>
+    </div>
   );
 };
+
+

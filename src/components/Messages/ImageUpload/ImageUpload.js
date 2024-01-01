@@ -12,6 +12,7 @@ const ImageUpload = (props) => {
     "application/pdf",
     "application/xlsx",
     "application/docx",
+    "image/jpeg"
   ];
   const onFileAdded = (e) => {
     const file = e.target.files[0];
@@ -35,7 +36,7 @@ const ImageUpload = (props) => {
           <Input
             type="file"
             name="file"
-            label="file Type(jpg,png)"
+            label="file Type(jpg,jpeg,mp3,pdf,png)"
             onChange={onFileAdded}
           />
         </Modal.Content>

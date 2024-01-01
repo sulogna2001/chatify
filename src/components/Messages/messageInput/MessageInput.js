@@ -41,6 +41,7 @@ const MessageInput = (props) => {
     };
   };
 
+
   const sendMessage = (downloadUrl) => {
     if (messageState || downloadUrl) {
       messageRef
@@ -75,7 +76,7 @@ const MessageInput = (props) => {
 
     let storageRef = {}, filePath = "";
 
-    if (contentType === 'image/png') {
+    if (contentType === 'image/png' || contentType === "image/jpeg") {
       storageRef = firebase.storage().ref("images");
       console.log(typeof (storageRef))
       filePath = `chat/images/${uuidv4()}.jpg`;

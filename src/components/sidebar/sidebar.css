@@ -1,6 +1,12 @@
-.side_bar{
-    background : rgb(33,33,33) !important;
-    font-size : 1.2rem  !important;
+.side_bar {
+    background: rgb(33, 33, 33) !important;
+    font-size: 1.2rem !important;
     overflow-y: scroll;
     padding: 2rem;
+}
+
+@media screen and (max-width:650px) {
+    .desktop_sidebar {
+        display: none !important;
+    }
 }

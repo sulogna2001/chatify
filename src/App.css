@@ -1,3 +1,31 @@
 .messagepanel {
     padding-left: 300px !important;
 }
+
+.mobileDrawer {
+    background: rgb(33, 33, 33) !important;
+    font-size: 1.2rem !important;
+    overflow-y: scroll;
+    padding: 2rem;
+}
+
+.toggleButton{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    border-radius: 50%;
+    height: 65px;
+    width:65px;
+}
+
+
+@media screen and (min-width:600px) {
+    .mobileDrawer {
+        display: none;
+    }
+
+    .toggleButton {
+        display: none;
+    }
+
+}
